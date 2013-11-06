@@ -1,0 +1,26 @@
+{
+  "name": "tiller",
+  "version": "0.0.0",
+  "description": "Steer your events to Awesomeland",
+  "homepage": "tiller.io",
+  "authors": [
+    "Robb Schiller <robb@futura.io>",
+    "Tim Schiller <tim@futura.io>"
+  ],
+  "main": "app.js",
+  "keywords": [
+    "Steer",
+    "your",
+    "Event"
+  ],
+  "license": "none",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "app/components",
+    "test",
+    "tests"
+  ]
+}

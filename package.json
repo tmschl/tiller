@@ -1,0 +1,21 @@
+{
+  "name": "tiller",
+  "version": "0.0.0",
+  "description": "Steer your Events to Awesomeland",
+  "main": "app.js",
+  "scripts": {
+    "test": "test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/tmschl/tiller.git"
+  },
+  "authors": [
+    "Robb Schiller <robb@futura.io>",
+    "Tim Schiller <tim@futura.io>"
+  ],
+  "license": "none",
+  "bugs": {
+    "url": "https://github.com/tmschl/tiller/issues"
+  }
+}
