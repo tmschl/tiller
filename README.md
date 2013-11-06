@@ -1,1 +1,3 @@
-Tiller helps you steer your event.
+## Tiller
+
+Steer your events to awesomeland.
