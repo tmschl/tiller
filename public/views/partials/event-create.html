@@ -1,0 +1,23 @@
+<div class="container-fluid">
+  <div class="row-fluid">
+    <div class="span2">
+      <!--Sidebar content-->
+      <h1>New Event</h1>
+
+      <form ng-submit="saveEvent()" ng-controller="EventCtrl">
+      <div>
+          <span style="width: 60px;">Event Name: </span>
+          <input ng-model="event.name" placeholder="Tim's party"></div>
+      <div>
+          <span style="width: 60px;">Date: </span>
+          <input type="date" ng-model="event.date" placeholder="03/09/14"></div>
+      <div>
+          <span style="width: 60px;">Colabs:</span> 
+          <input type="text"  ng-model="event.colabs" placeholder="tim, robb">
+      </div>
+
+        <input type="submit" val="save">save</input>
+      </form>
+    </div>
+  </div>
+</div>

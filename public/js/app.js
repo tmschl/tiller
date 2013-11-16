@@ -10,9 +10,13 @@ tillerApp.config(['$routeProvider',
         templateUrl: 'partials/event-list.html',
         controller: 'EventListCtrl'
       }).
-      when('/phones/:eventId', {
-        templateUrl: 'partials/event-detail.html',
-        controller: 'EventsDetailCtrl'
+      when('/event/new', {
+        templateUrl: 'partials/event-create.html',
+        controller: 'EventCreateCtrl'
+      }).
+      when('/event/:id', {
+        templateUrl: 'partials/event.html',
+        controller: 'EventCtrl'
       }).
       otherwise({
         redirectTo: '/events'
@@ -20,4 +24,3 @@ tillerApp.config(['$routeProvider',
   }
 ]);
 
-tillerApp.controller(
