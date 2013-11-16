@@ -5,7 +5,8 @@
   "homepage": "tiller.io",
   "authors": [
     "Robb Schiller <robb@futura.io>",
-    "Tim Schiller <tim@futura.io>"
+    "Tim Schiller <tim@futura.io>",
+    "Brian DA BOZZ"
   ],
   "main": "app.js",
   "keywords": [
@@ -24,6 +25,8 @@
     "tests"
   ],
   "dependencies": {
-    "angular": "~1.0.8"
+    "angular": "~1.2.1",
+    "angular-bootstrap": "~0.6.0",
+    "bootstrap-assets": "~3.0.0"
   }
 }

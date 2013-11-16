@@ -1,0 +1,36 @@
+// ********************
+//
+// Base Project Settings
+//
+// ********************
+
+//
+// Base Typographic Weights
+//
+
+$type-light: 100;
+$type-regular: 400;
+$type-bold: 700;
+
+//
+// Base Typography
+//
+
+$base-type: sans-serif;
+$base-type-weight: $type-regular;
+$base-type-size: 1.125em;
+$base-type-lineHeight: 1.5em;
+
+//
+// Headings
+//
+
+$base-type-weight-bold: $type-bold;
+
+// ********************
+//
+// Import All Modules
+//
+// ********************
+
+@import "../modules/all";
