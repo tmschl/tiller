@@ -19,16 +19,21 @@
     <!-- endbuild -->
   </head>
   <body ng-app="tillerApp">
-    <!--[if lt IE 7]>
-      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-    <![endif]-->
 
-    <h1>Tiller</h1>
-    <a ng-href="#/signup">Sign Up</a>
-    <a ng-href="#/login">login</a>
+    <div ng-controller="MainCtrl">
+      <!--[if lt IE 7]>
+        <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+      <![endif]-->
 
-    <!-- Add your site or application content here -->
-    <div class="container" ng-view=""></div>
+      <div ng-hide="user.isLoggedIn">
+        <h1>Tiller</h1>
+        <a ng-href="#/signup">Sign Up</a>
+        <a ng-href="#/login">login</a>
+      </div>
+
+      <!-- Add your site or application content here -->
+      <div class="container" ng-view=""></div>
+    </div>
 
     <!-- Google Analytics: change UA-XXXXX-X to be your site's ID -->
      <script>
@@ -61,6 +66,7 @@
         <script src="scripts/controllers/main.js"></script>
         <script src="scripts/controllers/signup.js"></script>
         <script src="scripts/controllers/login.js"></script>
+        <script src="scripts/services/user.js"></script>
         <!-- endbuild -->
 </body>
 </html>
