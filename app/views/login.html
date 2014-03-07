@@ -1,9 +1,10 @@
 <p>This is the login view.</p>
-<div>
+<label>
   username
-</div>
-<input type="text" name="some_name" value="">
-<div>
+</label>
+<input type="text" ng-model="username" name="some_name" value="">
+<label>
   password
-</div>
-<input type="text" name="some_name" value="">
+</label>
+<input type="password" ng-model="password" name="some_name" value="">
+<button ng-href="#/" ng-click="setUserName(username);setPassword(password);isValidUser()" ng-href="">submit</button>

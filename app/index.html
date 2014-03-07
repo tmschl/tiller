@@ -25,10 +25,16 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
       <![endif]-->
 
-      <div ng-hide="user.isLoggedIn">
+      <button ng-click="logUser()">userobj</button>
+      <div ng-hide="user.isLoggedIn()">
         <h1>Tiller</h1>
         <a ng-href="#/signup">Sign Up</a>
         <a ng-href="#/login">login</a>
+      </div>
+
+      <div ng-show="user.isLoggedIn()">
+        <h1> WELCOME </h1>
+
       </div>
 
       <!-- Add your site or application content here -->

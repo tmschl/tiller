@@ -8,5 +8,6 @@ angular.module('tillerApp')
       'Karma'
     ];
 
-    console.log(User);
+    $scope.user = User;
+
   }]);

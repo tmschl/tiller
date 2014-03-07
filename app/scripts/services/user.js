@@ -2,10 +2,33 @@
 
 angular.module('tillerApp')
   .service('User', function User() {
-    // AngularJS will instantiate a singleton by calling "new" on this function
-    var user = {
-      isLoggedIn: false
+    var userObject = {
+      isLoggedIn: false,
+      username: '',
+      password: ''
     };
 
-    return user;
+    var userInterface = {
+      isLoggedIn: function() {
+        return userObject.isLoggedIn;
+      },
+      setUsername: function(username) {
+        userObject.username = '';
+        userObject.username = username;
+      },
+      setPassword: function(password) {
+        userObject.password = '';
+        userObject.password = password;
+      },
+      isValidUser: function() {
+        // validate username and password on server
+        var isValid = true;
+        userObject.isLoggedIn = true;
+        return isValid;
+      }
+
+    };
+
+    return userInterface;
+
   });
