@@ -1,11 +1,10 @@
 'use strict';
 
 angular.module('tillerApp')
-  .controller('MainCtrl', function ($scope) {
+  .controller('SignupCtrl', function ($scope) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
       'Karma'
     ];
-    console.log('hi')
   });
