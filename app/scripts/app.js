@@ -18,6 +18,10 @@ angular.module('tillerApp', [
         templateUrl: 'views/signup.html',
         controller: 'SignupCtrl'
       })
+      .when('/login', {
+        templateUrl: 'views/login.html',
+        controller: 'LoginCtrl'
+      })
       .otherwise({
         redirectTo: '/'
       });
