@@ -12,6 +12,9 @@ angular.module('tillerApp')
       isLoggedIn: function() {
         return userObject.isLoggedIn;
       },
+      getUsername: function() {
+        return userObject.username;
+      },
       setUsername: function(username) {
         userObject.username = '';
         userObject.username = username;
@@ -25,6 +28,14 @@ angular.module('tillerApp')
         var isValid = true;
         userObject.isLoggedIn = true;
         return isValid;
+      },
+      logOutUser: function() {
+        userObject.isLoggedIn = false;
+        userObject.username = '';
+        userObject.password = '';
+      },
+      logUserObj: function() {
+        console.log(userObject);
       }
 
     };

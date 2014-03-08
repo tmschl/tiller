@@ -1,0 +1,14 @@
+User Model
+{
+  'username' : '',
+  'password' : '',
+  'email'    : '',
+}
+
+Event Model
+{
+  'eventName'   : '',
+  'date'        : '',
+  'venue'       : '',
+  'speaker'     : ''
+}

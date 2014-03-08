@@ -9,5 +9,6 @@ angular.module('tillerApp')
     ];
 
     $scope.user = User;
+    $scope.logUserObj = User.logUserObj;
 
   }]);
