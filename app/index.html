@@ -41,6 +41,31 @@
             <a href="#/" ng-click="user.logOutUser()">Logout</a>
           </div>
         </nav>
+
+        <div>
+          <h1> Event </h1>
+          <label> Name </label>
+          <input ng-model="name" type="text" name="some_name" value="">
+          <label> Date </label>
+          <input ng-model="date" type="date" name="some_name" value="">
+          <label> Venue </label>
+          <input ng-model="venue" type="text" name="some_name" value="">
+          <label> Speaker </label>
+          <input ng-model="speaker" type="text" name="some_name" value="">
+          <button ng-click="event.setEventName(name);event.setEventDate(date);event.setEventVenue(venue);event.setEventSpeaker(speaker);event.createNewEvent()"> Create </button>
+
+          <div class="event">
+            <ul>
+              <li ng-repeat="eventData in eventData track by $index" >
+                {{eventData.name}}
+                {{eventData.date}}
+                {{eventData.venue}}
+                {{eventData.speaker}}
+                <p ng-click="event.removeEvent($index)"> delete </p>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
 
       <!-- Add your site or application content here -->
@@ -79,6 +104,7 @@
         <script src="scripts/controllers/signup.js"></script>
         <script src="scripts/controllers/login.js"></script>
         <script src="scripts/services/user.js"></script>
+        <script src="scripts/services/event.js"></script>
         <!-- endbuild -->
 </body>
 </html>

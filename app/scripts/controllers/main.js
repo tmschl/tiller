@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('tillerApp')
-  .controller('MainCtrl', [ '$scope','User', function ($scope, User) {
+  .controller('MainCtrl', [ '$scope','User', 'Event', function ($scope, User, Event) {
     $scope.awesomeThings = [
       'HTML5 Boilerplate',
       'AngularJS',
@@ -9,6 +9,7 @@ angular.module('tillerApp')
     ];
 
     $scope.user = User;
-    $scope.logUserObj = User.logUserObj;
+    $scope.event = Event;
+    $scope.eventData = $scope.event.getCurrentEvents();
 
   }]);

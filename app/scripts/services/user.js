@@ -3,7 +3,7 @@
 angular.module('tillerApp')
   .service('User', function User() {
     var userObject = {
-      isLoggedIn: false,
+      isLoggedIn: true,
       username: '',
       password: ''
     };
