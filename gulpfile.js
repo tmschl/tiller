@@ -10,8 +10,8 @@ var livereload = require('gulp-livereload');
 var paths = {
   sass: {
     in: 'app/sass/main.scss',
-    out: 'app/css/main.scss',
-    watch: 'app/sass/**/*.scss',
+    out: 'app/css',
+    watch: ['app/sass/*.scss', 'app/sass/**/*.scss'],
     options: {},
   },
 };
