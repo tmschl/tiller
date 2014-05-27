@@ -1,9 +1,8 @@
-## Tiller
+# Tiller
 
 Steer your events to awesomeland.
 
-#### Fire
+## Development
 
-1. `npm install`
-2. `bower install`
-3. `grunt`
+1. `npm install && bower install`
+3. `gulp`
